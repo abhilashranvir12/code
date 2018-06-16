@@ -23,8 +23,8 @@ const users = [
 
 app.get("/", function(req,res){
     
-   let pathString =path.join(__dirname,"index.pug");
-   res.render(pathString,{
+   
+   res.render("index",{
        message: req.query.message || "hey"
    });
     
